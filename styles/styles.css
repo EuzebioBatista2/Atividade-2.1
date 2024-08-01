@@ -1,0 +1,100 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(4px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  width: 100%;
+  max-width: 350px;
+  background-color: #ffffffad;
+  border-radius: 12px;
+  padding: 40px 20px;
+  border: 1px solid #000;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+.title {
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 10px;
+  width: 100px;
+  background-color: #0271cc;
+  color: #FFF;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.btn:hover {
+  filter: drop-shadow(0 0 2em #222dffaa);
+}
+
+.activated-btn {
+  background-color: #111111;
+}
+
+.activated-btn:hover {
+  filter: drop-shadow(0 0 2em #444444aa);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataInput {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.calcResult {
+  height: 60px;
+}
