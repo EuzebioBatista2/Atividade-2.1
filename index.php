@@ -36,7 +36,7 @@
     </div>
   </main>
 
-  <script src="scripts/chart.js"></script>
+  <script src="scripts/converter.js"></script>
 </body>
 
 </html>
